@@ -1,0 +1,1840 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="1-TileLevelInfo类.files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ZH Double</o:Author>
+  <o:Template>MapGIS Desktop API模板.dotx</o:Template>
+  <o:LastAuthor>Yuhy</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2020-03-24T08:07:00Z</o:Created>
+  <o:LastSaved>2020-03-24T08:07:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>70</o:Words>
+  <o:Characters>403</o:Characters>
+  <o:Company>Microsoft</o:Company>
+  <o:Lines>3</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>472</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:KSOProductBuildVer dt:dt="string">2052-11.1.0.9440</o:KSOProductBuildVer>
+ </o:CustomDocumentProperties>
+</xml><![endif]-->
+<link rel=dataStoreItem href="1-TileLevelInfo类.files/item0001.xml"
+target="1-TileLevelInfo类.files/props002.xml">
+<link rel=themeData href="1-TileLevelInfo类.files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="1-TileLevelInfo类.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:AttachedTemplate
+   HRef="C:\Users\Administrator\AppData\Roaming\Microsoft\Templates\MapGIS Desktop API模板.dotx"></w:AttachedTemplate>
+  <w:UpdateStylesOnOpen/>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:DoNotOptimizeForBrowser/>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false" QFormat="true"
+   Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false" QFormat="true"
+   Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="false" Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="false" Name="footer"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Table Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610610945 1073750107 16 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 1 Char";
+	mso-style-next:正文;
+	margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:16.5pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-font-kerning:22.0pt;}
+h2
+	{mso-style-update:auto;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 2 Char";
+	mso-style-next:正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:173%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-bidi-font-family:微软雅黑;
+	mso-font-kerning:1.0pt;}
+h3
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 3 Char";
+	mso-style-next:正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:173%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:14.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-font-kerning:1.0pt;}
+h4
+	{mso-style-update:auto;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 4 Char";
+	mso-style-next:正文;
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:10.5pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"页眉 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"页脚 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.a, li.a, div.a
+	{mso-style-name:"目\(编号\)";
+	mso-style-update:auto;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:1.0pt;
+	margin-right:0cm;
+	margin-bottom:1.0pt;
+	margin-left:49.35pt;
+	mso-para-margin-top:.2gd;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:.2gd;
+	mso-para-margin-left:49.35pt;
+	text-indent:-21.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo1;
+	font-size:10.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;
+	mso-bidi-font-family:微软雅黑;
+	font-weight:bold;}
+p.a0, li.a0, div.a0
+	{mso-style-name:构造函数;
+	mso-style-update:auto;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"构造函数 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	background:#F1F1F1;
+	font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	color:#ED7D31;
+	mso-themecolor:accent2;
+	background:#F1F1F1;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.a1
+	{mso-style-name:"构造函数 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:构造函数;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;
+	mso-bidi-font-family:"Times New Roman";
+	color:#ED7D31;
+	mso-themecolor:accent2;
+	background:#F1F1F1;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a2, li.a2, div.a2
+	{mso-style-name:描述;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"描述 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	background:#F1F1F1;
+	font-size:10.5pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-bidi-font-family:微软雅黑;
+	color:black;
+	mso-font-kerning:1.0pt;}
+span.a3
+	{mso-style-name:"描述 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:描述;
+	mso-ansi-font-size:10.5pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;
+	mso-bidi-font-family:微软雅黑;
+	color:black;
+	background:#F1F1F1;
+	mso-font-kerning:1.0pt;}
+p.20, li.20, div.20
+	{mso-style-name:备注2;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"备注2 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+span.21
+	{mso-style-name:"备注2 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:备注2;
+	mso-ansi-font-size:9.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.1, li.1, div.1
+	{mso-style-name:备注1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"备注1 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:11.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+span.10
+	{mso-style-name:"备注1 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:备注1;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:微软雅黑;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+span.a4
+	{mso-style-name:"页眉 字符";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;}
+span.a5
+	{mso-style-name:"页脚 字符";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;}
+span.11
+	{mso-style-name:"标题 1 字符";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;
+	font-weight:bold;}
+p.a6, li.a6, div.a6
+	{mso-style-name:换行;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"换行 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+span.a7
+	{mso-style-name:"换行 字符";
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-locked:yes;
+	mso-style-link:换行;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;}
+p.a8, li.a8, div.a8
+	{mso-style-name:方法返回值说明;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"方法返回值说明 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:8.0pt;
+	font-family:"Verdana","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-font-kerning:1.0pt;}
+span.a9
+	{mso-style-name:"方法返回值说明 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:方法返回值说明;
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Verdana","sans-serif";
+	mso-ascii-font-family:Verdana;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Verdana;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;}
+span.4Char
+	{mso-style-name:"标题 4 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 4";
+	mso-ansi-font-size:10.5pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.2Char
+	{mso-style-name:"标题 2 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 2";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;
+	mso-bidi-font-family:微软雅黑;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.Char
+	{mso-style-name:"页眉 Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;
+	mso-font-kerning:1.0pt;}
+span.Char0
+	{mso-style-name:"页脚 Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;
+	mso-font-kerning:1.0pt;}
+span.1Char
+	{mso-style-name:"标题 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.3Char
+	{mso-style-name:"标题 3 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 3";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-ascii-font-family:微软雅黑;
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:微软雅黑;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("1-TileLevelInfo类.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("1-TileLevelInfo类.files/header.htm") fcs;
+	mso-endnote-separator:url("1-TileLevelInfo类.files/header.htm") es;
+	mso-endnote-continuation-separator:url("1-TileLevelInfo类.files/header.htm") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:290281322;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-431573184 -2130826892 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-style-link:"目\(编号\)";
+	mso-level-text:"\(%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:49.35pt;
+	text-indent:-21.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	font-variant:normal !important;
+	mso-text-animation:none;
+	mso-hide:none;
+	text-transform:none;
+	position:relative;
+	top:0pt;
+	mso-text-raise:0pt;
+	letter-spacing:0pt;
+	mso-ligatures:none;
+	mso-number-form:default;
+	mso-number-spacing:default;
+	mso-stylistic-set:0;
+	mso-contextual-alternates:no;
+	text-effect:none;
+	text-shadow:none;
+	text-effect:none;
+	text-effect:none;
+	mso-style-textoutline-type:none;
+	mso-style-textoutline-outlinestyle-dpiwidth:0pt;
+	mso-style-textoutline-outlinestyle-linecap:round;
+	mso-style-textoutline-outlinestyle-join:bevel;
+	mso-style-textoutline-outlinestyle-pctmiterlimit:0%;
+	mso-style-textoutline-outlinestyle-dash:solid;
+	mso-style-textoutline-outlinestyle-align:center;
+	mso-style-textoutline-outlinestyle-compound:simple;
+	mso-style-style3d-lightrigtype:13;
+	mso-style-style3d-lightrigdirection:2;
+	mso-style-style3d-lightrigrotation-anglatitude:0;
+	mso-style-style3d-lightrigrotation-anglongitude:0;
+	mso-style-style3d-lightrigrotation-angrevolution:0;
+	mso-effects-glow-color:black;
+	mso-effects-glow-alpha:100.0%;
+	mso-effects-glow-rad:0pt;
+	mso-effects-shadow-color:black;
+	mso-effects-shadow-alpha:100.0%;
+	mso-effects-shadow-dpiradius:0pt;
+	mso-effects-shadow-dpidistance:0pt;
+	mso-effects-shadow-angledirection:0;
+	mso-effects-shadow-align:none;
+	mso-effects-shadow-pctsx:0%;
+	mso-effects-shadow-pctsy:0%;
+	mso-effects-shadow-anglekx:0;
+	mso-effects-shadow-angleky:0;
+	mso-effects-reflection-dpiradius:0pt;
+	mso-effects-reflection-dpidistance:0pt;
+	mso-effects-reflection-angdirection:0;
+	mso-effects-reflection-pctsx:0%;
+	mso-effects-reflection-pctsy:0%;
+	mso-effects-reflection-anglekx:0;
+	mso-effects-reflection-angleky:0;
+	mso-effects-reflection-pctalphastart:0%;
+	mso-effects-reflection-pctstartpos:0%;
+	mso-effects-reflection-pctalphaend:0%;
+	mso-effects-reflection-pctendpos:0%;
+	mso-effects-reflection-angfadedirection:0;
+	mso-effects-reflection-align:none;
+	mso-bevel-captop-bevelstyle:0;
+	mso-bevel-captop-dpiwidth:0pt;
+	mso-bevel-captop-dpiheight:0pt;
+	mso-bevel-capbot-bevelstyle:0;
+	mso-bevel-capbot-dpiwidth:0pt;
+	mso-bevel-capbot-dpiheight:0pt;
+	mso-bevel-material:0;
+	mso-bevel-dpiextrusion:0pt;
+	mso-bevel-dpicontour:0pt;
+	font-emphasize:none;
+	mso-ansi-font-weight:normal;
+	mso-bidi-font-weight:normal;
+	mso-ansi-font-style:normal;
+	mso-bidi-font-style:normal;
+	mso-no-proof:no;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;
+	vertical-align:baseline;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:等线;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:等线;
+	mso-hansi-theme-font:minor-latin;}
+table.MsoTableGrid
+	{mso-style-name:网格型;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;}
+table.aa
+	{mso-style-name:属性;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	border:solid silver 1.0pt;
+	mso-border-alt:solid silver .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid silver;
+	mso-border-insidev:.5pt solid silver;
+	mso-tstyle-shading:#D7EFFF;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"微软雅黑","sans-serif";
+	color:black;
+	mso-themecolor:text1;
+	mso-font-kerning:1.0pt;}
+table.aaFirstRow
+	{mso-style-name:属性;
+	mso-table-condition:first-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-tstyle-shading:#0099FF;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-fareast-font-family:微软雅黑;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;}
+table.aaFirstCol
+	{mso-style-name:属性;
+	mso-table-condition:first-column;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-tstyle-shading:#D7EFFF;
+	mso-tstyle-border-top:.5pt solid silver;
+	mso-tstyle-border-left:.5pt solid silver;
+	mso-tstyle-border-bottom:.5pt solid silver;
+	mso-tstyle-border-right:.5pt solid silver;
+	mso-tstyle-diagonal-down:cell-none;
+	mso-tstyle-diagonal-up:cell-none;
+	mso-tstyle-border-insideh:.5pt solid silver;
+	mso-tstyle-border-insidev:.5pt solid silver;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-fareast-font-family:微软雅黑;
+	mso-ansi-font-weight:bold;}
+table.ab
+	{mso-style-name:方法;
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	border:solid silver 1.0pt;
+	mso-border-alt:solid silver .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid silver;
+	mso-border-insidev:.5pt solid silver;
+	mso-tstyle-shading:#D7E3BC;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-font-kerning:1.0pt;}
+table.abFirstRow
+	{mso-style-name:方法;
+	mso-table-condition:first-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-tstyle-shading:#9DBB59;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-fareast-font-family:微软雅黑;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;}
+table.abFirstCol
+	{mso-style-name:方法;
+	mso-table-condition:first-column;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	font-family:"微软雅黑","sans-serif";
+	mso-fareast-font-family:微软雅黑;
+	mso-ansi-font-weight:bold;}
+table.abOddRow
+	{mso-style-name:方法;
+	mso-table-condition:odd-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-tstyle-shading:#D7E3BC;}
+table.abEvenRow
+	{mso-style-name:方法;
+	mso-table-condition:even-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-tstyle-shading:white;
+	mso-tstyle-shading-themecolor:background1;}
+table.ac
+	{mso-style-name:事件;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	border:solid silver 1.0pt;
+	mso-border-alt:solid silver .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid silver;
+	mso-border-insidev:.5pt solid silver;
+	mso-tstyle-shading:white;
+	mso-tstyle-shading-themecolor:background1;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;}
+table.acFirstRow
+	{mso-style-name:事件;
+	mso-table-condition:first-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#7030A0;
+	mso-tstyle-vert-align:middle;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;}
+table.acFirstCol
+	{mso-style-name:事件;
+	mso-table-condition:first-column;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;}
+table.ad
+	{mso-style-name:类;
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	border:solid silver 1.0pt;
+	mso-border-alt:solid silver .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid silver;
+	mso-border-insidev:.5pt solid silver;
+	mso-tstyle-vert-align:middle;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;}
+table.adFirstRow
+	{mso-style-name:类;
+	mso-table-condition:first-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#4F81BD;
+	text-align:center;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;}
+table.adOddRow
+	{mso-style-name:类;
+	mso-table-condition:odd-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#E9EDF4;}
+table.adEvenRow
+	{mso-style-name:类;
+	mso-table-condition:even-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-tstyle-shading:white;
+	mso-tstyle-shading-themecolor:background1;}
+table.ae
+	{mso-style-name:参数;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	border:solid silver 1.0pt;
+	mso-border-alt:solid silver .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid silver;
+	mso-border-insidev:.5pt solid silver;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;}
+table.aeFirstRow
+	{mso-style-name:参数;
+	mso-table-condition:first-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#F79646;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;}
+table.aeFirstCol
+	{mso-style-name:参数;
+	mso-table-condition:first-column;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;
+	mso-ansi-font-weight:bold;}
+table.af
+	{mso-style-name:代码;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	border-top:solid #C8CDDE 1.0pt;
+	border-left:none;
+	border-bottom:solid #C8CDDE 1.0pt;
+	border-right:none;
+	mso-border-top-alt:solid #C8CDDE .5pt;
+	mso-border-bottom-alt:solid #C8CDDE .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid #C8CDDE;
+	mso-tstyle-shading:#F7F7FF;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;}
+table.afFirstRow
+	{mso-style-name:代码;
+	mso-table-condition:first-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#EFEFF7;}
+table.af0
+	{mso-style-name:父类;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	border:solid silver 1.0pt;
+	mso-border-alt:solid silver .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid silver;
+	mso-border-insidev:.5pt solid silver;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;}
+table.af0FirstRow
+	{mso-style-name:父类;
+	mso-table-condition:first-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-tstyle-shading:#4BACC6;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;}
+table.af0FirstCol
+	{mso-style-name:父类;
+	mso-table-condition:first-column;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;
+	mso-ansi-font-weight:bold;}
+table.af1
+	{mso-style-name:接口;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	border:solid silver 1.0pt;
+	mso-border-alt:solid silver .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid silver;
+	mso-border-insidev:.5pt solid silver;
+	mso-tstyle-shading:#EDEAF0;
+	mso-tstyle-vert-align:middle;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;}
+table.af1FirstRow
+	{mso-style-name:接口;
+	mso-table-condition:first-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-tstyle-shading:#8064A2;
+	text-align:center;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;}
+table.af1FirstCol
+	{mso-style-name:接口;
+	mso-table-condition:first-column;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;}
+table.af2
+	{mso-style-name:枚举;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	border:solid silver 1.0pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:1.0pt solid silver;
+	mso-border-insidev:1.0pt solid silver;
+	mso-tstyle-shading:#F2DBDA;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;}
+table.af2FirstRow
+	{mso-style-name:枚举;
+	mso-table-condition:first-row;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-tstyle-shading:#C0504D;
+	text-align:center;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:微软雅黑;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="4097"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink="#954F72" style='tab-interval:21.0pt;
+text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<h2><span lang=EN-US>TileLevelInfo</span>类</h2>
+
+<p class=a2>瓦片级数结构定义</p>
+
+<p class=a6><span lang=EN-US style='font-size:10.5pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=a0>构造函数：<span lang=EN-US>public TileLevelInfo();</span></p>
+
+<h3>属性</h3>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:1.0pt'>
+  <td width="33%" valign=top style='width:33.32%;border:solid silver 1.0pt;
+  mso-border-alt:solid silver .5pt;background:#0099FF;padding:0cm 5.4pt 0cm 5.4pt;
+  height:1.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><b><span
+  style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:宋体;color:white;
+  mso-font-kerning:0pt'>属性<span lang=EN-US><o:p></o:p></span></span></b></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border:solid silver 1.0pt;
+  border-left:none;mso-border-top-alt:solid silver .5pt;mso-border-bottom-alt:
+  solid silver .5pt;mso-border-right-alt:solid silver .5pt;background:#0099FF;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><b><span
+  style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:宋体;color:white;
+  mso-font-kerning:0pt'>类型<span lang=EN-US><o:p></o:p></span></span></b></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border:solid silver 1.0pt;
+  border-left:none;mso-border-top-alt:solid silver .5pt;mso-border-bottom-alt:
+  solid silver .5pt;mso-border-right-alt:solid silver .5pt;background:#0099FF;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><b><span
+  style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:宋体;color:white;
+  mso-font-kerning:0pt'>描述<span lang=EN-US><o:p></o:p></span></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:1.0pt'>
+  <td width="33%" valign=top style='width:33.32%;border:solid silver 1.0pt;
+  border-top:none;mso-border-top-alt:solid silver .5pt;mso-border-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:微软雅黑;mso-bidi-language:
+  AR'>BeginRow<o:p></o:p></span></b></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-top-alt:solid silver .5pt;
+  mso-border-bottom-alt:solid silver .5pt;mso-border-right-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  mso-bidi-font-family:微软雅黑'>int<o:p></o:p></span></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-top-alt:solid silver .5pt;
+  mso-border-bottom-alt:solid silver .5pt;mso-border-right-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:
+  微软雅黑;mso-bidi-language:AR'>可读写，当前级要裁剪的开始行<span lang=EN-US>(</span>从<span
+  lang=EN-US>0</span>行开始，包含该行<span lang=EN-US>)<o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:1.0pt'>
+  <td width="33%" valign=top style='width:33.32%;border:solid silver 1.0pt;
+  border-top:none;mso-border-top-alt:solid silver .5pt;mso-border-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:微软雅黑;mso-bidi-language:
+  AR'>EndRow<o:p></o:p></span></b></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-top-alt:solid silver .5pt;
+  mso-border-bottom-alt:solid silver .5pt;mso-border-right-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  mso-bidi-font-family:微软雅黑'>int<span style='color:red'><o:p></o:p></span></span></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-top-alt:solid silver .5pt;
+  mso-border-bottom-alt:solid silver .5pt;mso-border-right-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:
+  微软雅黑;mso-bidi-language:AR'>可读写，当前级要裁剪的终止行<span lang=EN-US>(</span>包含该行<span
+  lang=EN-US>)<o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:1.0pt'>
+  <td width="33%" valign=top style='width:33.32%;border:solid silver 1.0pt;
+  border-top:none;mso-border-top-alt:solid silver .5pt;mso-border-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:微软雅黑;mso-bidi-language:
+  AR'>Scale<o:p></o:p></span></b></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-top-alt:solid silver .5pt;
+  mso-border-bottom-alt:solid silver .5pt;mso-border-right-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  mso-bidi-font-family:微软雅黑'>double<span style='color:red'><o:p></o:p></span></span></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-top-alt:solid silver .5pt;
+  mso-border-bottom-alt:solid silver .5pt;mso-border-right-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:
+  微软雅黑;mso-bidi-language:AR'>可读写，当前级数的比例尺分母<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:1.0pt'>
+  <td width="33%" valign=top style='width:33.32%;border:solid silver 1.0pt;
+  border-top:none;mso-border-top-alt:solid silver .5pt;mso-border-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:微软雅黑;mso-bidi-language:
+  AR'>TileLogicRect<o:p></o:p></span></b></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-top-alt:solid silver .5pt;
+  mso-border-bottom-alt:solid silver .5pt;mso-border-right-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=a8><span lang=EN-US><a
+  href="../../MapGIS.GeoObjects/MapGIS.GeoObjects.Geometry/1-Rect类.htm"><span
+  style='font-size:10.5pt;font-family:"微软雅黑","sans-serif";mso-bidi-font-family:
+  微软雅黑;color:#4472C4;mso-themecolor:accent1;mso-bidi-language:AR'>Rect</span></a></span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:微软雅黑;
+  color:red'><o:p></o:p></span></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-top-alt:solid silver .5pt;
+  mso-border-bottom-alt:solid silver .5pt;mso-border-right-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:
+  微软雅黑;mso-bidi-language:AR'>可读写，瓦片对应的逻辑范围<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;height:1.0pt'>
+  <td width="33%" valign=top style='width:33.32%;border:solid silver 1.0pt;
+  border-top:none;mso-border-top-alt:solid silver .5pt;mso-border-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:微软雅黑;mso-bidi-language:
+  AR'>XTileLogic<o:p></o:p></span></b></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-top-alt:solid silver .5pt;
+  mso-border-bottom-alt:solid silver .5pt;mso-border-right-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  mso-bidi-font-family:微软雅黑'>double<span style='color:red'><o:p></o:p></span></span></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-top-alt:solid silver .5pt;
+  mso-border-bottom-alt:solid silver .5pt;mso-border-right-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:
+  微软雅黑;mso-bidi-language:AR'>可读写，当前网格每格逻辑<span lang=EN-US>X</span>大小<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes;height:1.0pt'>
+  <td width="33%" valign=top style='width:33.32%;border:solid silver 1.0pt;
+  border-top:none;mso-border-top-alt:solid silver .5pt;mso-border-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:微软雅黑;mso-bidi-language:
+  AR'>YTileLogic<o:p></o:p></span></b></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-top-alt:solid silver .5pt;
+  mso-border-bottom-alt:solid silver .5pt;mso-border-right-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-bidi-font-size:10.5pt;
+  mso-bidi-font-family:微软雅黑'>double<span style='color:red'><o:p></o:p></span></span></p>
+  </td>
+  <td width="33%" valign=top style='width:33.34%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-top-alt:solid silver .5pt;
+  mso-border-bottom-alt:solid silver .5pt;mso-border-right-alt:solid silver .5pt;
+  background:#D7EFFF;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal><span style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:
+  微软雅黑;mso-bidi-language:AR'>可读写，当前网格每格逻辑<span lang=EN-US>Y</span>大小<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+</table>
+
+<h3>方法</h3>
+
+<table class=ab border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;mso-border-alt:solid silver .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:-1;mso-yfti-firstrow:yes;height:1.0pt'>
+  <td width="25%" valign=top style='width:25.0%;border:solid silver 1.0pt;
+  mso-border-alt:solid silver .5pt;background:#9DBB59;padding:0cm 5.4pt 0cm 5.4pt;
+  height:1.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan;
+  mso-yfti-cnfc:5'><b><span style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:
+  宋体;color:white;mso-font-kerning:0pt'>方法<span lang=EN-US><o:p></o:p></span></span></b></p>
+  </td>
+  <td width="25%" valign=top style='width:25.0%;border:solid silver 1.0pt;
+  border-left:none;mso-border-left-alt:solid silver .5pt;mso-border-alt:solid silver .5pt;
+  background:#9DBB59;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan;
+  mso-yfti-cnfc:1'><b><span style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:
+  宋体;color:white;mso-font-kerning:0pt'>返回值<span lang=EN-US><o:p></o:p></span></span></b></p>
+  </td>
+  <td width="25%" valign=top style='width:25.0%;border:solid silver 1.0pt;
+  border-left:none;mso-border-left-alt:solid silver .5pt;mso-border-alt:solid silver .5pt;
+  background:#9DBB59;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan;
+  mso-yfti-cnfc:1'><b><span style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:
+  宋体;color:white;mso-font-kerning:0pt'>描述<span lang=EN-US><o:p></o:p></span></span></b></p>
+  </td>
+  <td width="25%" valign=top style='width:25.0%;border:solid silver 1.0pt;
+  border-left:none;mso-border-left-alt:solid silver .5pt;mso-border-alt:solid silver .5pt;
+  background:#9DBB59;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan;
+  mso-yfti-cnfc:1'><b><span style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:
+  宋体;color:white;mso-font-kerning:0pt'>参数说明<span lang=EN-US><o:p></o:p></span></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:0;height:1.0pt'>
+  <td width="25%" valign=top style='width:25.0%;border:solid silver 1.0pt;
+  border-top:none;mso-border-top-alt:solid silver .5pt;mso-border-alt:solid silver .5pt;
+  background:#D7E3BC;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:68'><b style='mso-bidi-font-weight:
+  normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;color:black'>Clone()</span></b><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width="25%" valign=top style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-left-alt:solid silver .5pt;
+  mso-border-alt:solid silver .5pt;background:#D7E3BC;padding:0cm 5.4pt 0cm 5.4pt;
+  height:1.0pt'>
+  <p class=a8 style='mso-yfti-cnfc:64'><span lang=EN-US style='font-size:10.5pt;
+  font-family:"微软雅黑","sans-serif";mso-bidi-font-family:微软雅黑;color:#4472C4;
+  mso-themecolor:accent1;mso-bidi-language:AR'><a href="1-TileLevelInfo类.htm"><span
+  style='color:#4472C4;mso-themecolor:accent1'>TileLevelInfo</span></a></span><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;mso-bidi-font-family:微软雅黑;
+  color:#4472C4;mso-themecolor:accent1;mso-bidi-language:AR'><o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:9.0pt;
+  mso-bidi-language:AR'>成功返回瓦片级数结构对象</span><span lang=EN-US style='mso-bidi-font-size:
+  10.5pt;mso-bidi-font-family:微软雅黑;mso-bidi-language:AR'><o:p></o:p></span></p>
+  </td>
+  <td width="25%" valign=top style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-left-alt:solid silver .5pt;
+  mso-border-alt:solid silver .5pt;background:#D7E3BC;padding:0cm 5.4pt 0cm 5.4pt;
+  height:1.0pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='mso-bidi-font-size:
+  10.5pt;color:black'>复制对象<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width="25%" valign=top style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-left-alt:solid silver .5pt;
+  mso-border-alt:solid silver .5pt;background:#D7E3BC;padding:0cm 5.4pt 0cm 5.4pt;
+  height:1.0pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='mso-bidi-font-size:
+  10.5pt;mso-bidi-font-family:微软雅黑;color:black;mso-bidi-language:AR'>无<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;height:1.0pt'>
+  <td width="25%" valign=top style='width:25.0%;border:solid silver 1.0pt;
+  border-top:none;mso-border-top-alt:solid silver .5pt;mso-border-alt:solid silver .5pt;
+  background:white;mso-background-themecolor:background1;padding:0cm 5.4pt 0cm 5.4pt;
+  height:1.0pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:132'><b style='mso-bidi-font-weight:
+  normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;color:black'>Dispose()</span></b><span
+  lang=EN-US style='mso-bidi-font-size:10.5pt;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width="25%" valign=top style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-left-alt:solid silver .5pt;
+  mso-border-alt:solid silver .5pt;background:white;mso-background-themecolor:
+  background1;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=a8 style='mso-yfti-cnfc:128'><span style='font-size:10.5pt;
+  font-family:"微软雅黑","sans-serif";mso-bidi-font-family:微软雅黑;mso-bidi-language:
+  AR'>无</span><span lang=EN-US style='font-size:10.5pt;mso-bidi-language:AR'><o:p></o:p></span></p>
+  </td>
+  <td width="25%" valign=top style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-left-alt:solid silver .5pt;
+  mso-border-alt:solid silver .5pt;background:white;mso-background-themecolor:
+  background1;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='mso-bidi-font-size:
+  10.5pt;color:black'>销毁对象</span><span lang=EN-US style='mso-bidi-font-size:
+  10.5pt;mso-bidi-font-family:微软雅黑;color:black;mso-bidi-language:AR'><o:p></o:p></span></p>
+  </td>
+  <td width="25%" valign=top style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid silver 1.0pt;border-right:solid silver 1.0pt;
+  mso-border-top-alt:solid silver .5pt;mso-border-left-alt:solid silver .5pt;
+  mso-border-alt:solid silver .5pt;background:white;mso-background-themecolor:
+  background1;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='mso-bidi-font-size:
+  10.5pt;mso-bidi-font-family:微软雅黑;color:black;mso-bidi-language:AR'>无<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
